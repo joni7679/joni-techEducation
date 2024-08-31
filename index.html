@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduction site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <!-- remix icons cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="px-5 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
+        <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold">LOGO</a>
+            <div class="space-x-4 text-white responsive-navbar">
+                <a href="#" class="hover:text-gray-200">Home</a>
+                <a href="#" class="hover:text-gray-200">About</a>
+                <a href="#" class="hover:text-gray-200">Services</a>
+                <a href="#" class="hover:text-gray-200">Courses</a>
+                <a href="#" class="hover:text-gray-200">Portfolio</a>
+                <a href="#" class="hover:text-gray-200">Contact</a>
+                <a href="#" class="text-sm bg-transparent border border-white py-2 px-4 rounded-lg hover:bg-white hover:text-purple-600">Log in</a>
+                <a href="#" class="text-sm bg-purple-600 py-2 px-4 rounded-lg hover:bg-purple-800">Enroll now</a>
+            </div>   
+            <i class="ri-menu-3-line toggle-icon text-white text-2xl cursor-pointer"></i>     
+        </div>
+    </nav>
+
+    <!-- Banner Section -->
+    <section class="container mx-auto flex flex-col-reverse lg:flex-row items-center py-12 px-4 lg:px-0">
+        <div class="lg:w-1/2 w-full mt-6 lg:mt-0">
+            <a href="#" class="flex items-center text-orange-500 font-semibold text-xl">
+                <div class="h-1 w-16 bg-orange-500 mr-2"></div>
+                <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.33 8.8l-5 3A.75.75 0 017 13.25v-6.5a.75.75 0 011.13-.65l5 3a.75.75 0 010 1.3z" />
+                </svg>
+                What is NAME?
+            </a>
+        </div>
+        <div class="lg:w-1/2 w-full flex flex-col items-center relative">
+            <div class="banner-img w-80 h-80 rounded-full border-[1px] bg-[#ff783e]  ">
+                <img class="w-full h-full object-cover" src="./assets/imges/banner-imge.png" alt="" />
+                <!-- <div
+                    class="bg-blue-300 text-white font-semibold text-lg py-3 px-6 rounded-2xl shadow-lg absolute left-[-58px] top-[34px]">
+                    10+ Online Courses
+                </div>
+
+                <div class="bg-green-300 text-white font-semibold text-lg py-3 px-6 rounded-2xl shadow-lg absolute">20k+
+                    Online
+                    Students</div>
+                <div class="bg-pink-300 text-white font-semibold text-lg py-3 px-6 rounded-2xl shadow-lg absolute">20+
+                    Expert
+                    Trainers</div>
+            </div> -->
+
+            </div>
+    </section>
+
+    <div class="bg-blue-500 text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+            <div>
+                <h2 class="text-4xl font-bold">20+</h2>
+                <p>Experienced Trainers</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold">20K+</h2>
+                <p>Students</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold">24/7</h2>
+                <p>Helpline Available</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold">10+</h2>
+                <p>Valuable Trending Courses</p>
+            </div>
+        </div>
+    </div>
+    <!--=====our demand course =====-->
+    <section class="our-demand-course-section">
+        <div class="container mx-auto p-4">
+            <h2 class="text-center text-2xl font-bold mb-8">Our Demandable Courses</h2>
+            <div class="grid lg:grid-cols-3 gap-8">
+
+                <!-- Course List -->
+                <div class="lg:col-span-1 flex flex-col gap-4">
+                    <div
+                        class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer">
+                        Digital Marketing
+                    </div>
+                    <div
+                        class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer">
+                        Graphics Design
+                    </div>
+                    <div
+                        class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer">
+                        Web-Designing
+                    </div>
+                    <div
+                        class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer">
+                        HTML+CSS Basic
+                    </div>
+                </div>
+
+                <!-- Course Details -->
+                <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow-lg flex items-center border-orange-500">
+                    <div>
+                        <h3 class="text-orange-500 text-xl font-semibold mb-4">Digital Marketing</h3>
+                        <p class="text-gray-600 mb-4">
+                            Digital Marketing refers to the use of digital channels, platforms, and technologies to
+                            promote products, services...
+                        </p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <ul class="list-none space-y-2 mb-4">
+                                    <li class="flex items-center gap-3 ">
+                                        <span class="mr-2"><img src="./assets/imges/book-bookmark.png" alt=""></span>1
+                                        course
+
+                                        <span class="mr-2"><img src="./assets/imges/clock.png" alt=""></span>5+ hours
+                                    </li>
+                                    <li class="flex items-center gap-3 ">
+                                        <p> <span class="mr-2 text-[#ff9292]">✔</span>Live Q&A Support</p>
+                                        <p><span class="mr-2 text-[#ff9292]">✔</span><span>2 Lakh+ Students
+                                                Enrolled</span></p>
+                                    </li>
+
+                                    <li class="flex items-center">
+                                        <span class="mr-2 text-[#ff9292]">✔</span>GyanMool Certificate
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="course-image">
+                                <img class="w-[240px]" src="./assets/imges/digitalmarketing-img.png" alt="">
+                            </div>
+                        </div>
+
+                        <button class="bg-orange-500 text-white py-2 px-4 rounded-lg hover:bg-orange-600">Know
+                            more</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- our course section -->
+    <section class="our-course-section bg-[#ea6aff] w-full  mt-10 capitalize">
+        <div class="container mx-auto p-4">
+            <div class=" py-5">
+                <h2 class="text-white text-2xl font-bold text-center mb-10">OUR ALL COURSES</h2>
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Course Card 1 -->
+                    <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
+                        <img src="./assets/imges/course1.png" alt="Digital Marketing"
+                            class="w-full h-48 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">digital Marketing
+                            </h1>
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                    class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">Digital Marketing & Affiliate
+                            Marketing
+                        </h3>
+                        <div class="flex gap-5">
+                            <p class="text-gray-500 mb-2">15 Courses</p>
+                            <p class="text-gray-500 mb-4">234+ Students</p>
+                        </div>
+                        <div class="border-b-2 border-black mt-5"></div>
+
+                        <div class="flex justify-between items-center mt-5">
+                            <p class="text-2xl font-bold text-purple-600">₹1499</p>
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 2 -->
+                    <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
+                        <img src="./assets/imges/course2.png" alt="Web Design" class="w-full h-48 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">web Design
+                            </h1>
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                    class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">Web Designing & Prototyping</h3>
+                        <div class="flex gap-5">
+                            <p class="text-gray-500 mb-2">15 Courses</p>
+                            <p class="text-gray-500 mb-4">234+ Students</p>
+                        </div>
+                        <div class="border-b-2 border-black mt-5"></div>
+                        <div class="flex justify-between items-center mt-5">
+                            <p class="text-2xl font-bold text-purple-600">₹2999</p>
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                        </div>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
+                        <img src="./assets/imges/course3.png" alt="HTML CSS" class="w-full h-48 rounded-lg mb-4">
+                        <div class="flex items-center justify-between">
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">html & css basic
+                            </h1>
+                            <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                    class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">HTML + CSS Learning & Practical</h3>
+                        <div class="flex gap-5">
+                            <p class="text-gray-500 mb-2">15 Courses</p>
+                            <p class="text-gray-500 mb-4">234+ Students</p>
+                        </div>
+                        <div class="border-b-2 border-black mt-5"></div>
+
+                        <div class="flex justify-between items-center mt-5">
+                            <p class="text-2xl font-bold text-purple-600">₹3499</p>
+                            <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- why us section -->
+    <section class="why-us-scetion">
+        <div class="container mx-auto p-4">
+            <h1 class="text-center  text-xl uppercase border-b-2 border-orange-500 w-fit mx-auto ">why us</h1>
+            <div class="grid md:grid-cols-2 sm:grid-cols-1 mt-5">
+                <div class="left-part px-10">
+                    <img class="w-[400px]" src="./assets/imges/WHY IMG.png" alt="">
+                </div>
+
+                <div class="right-part">
+
+                    <div class="flex mt-5 items-start  gap-5 px-10 flex-col">
+                        <h1 class="text-xl"><span class="text-[#ff783e]">Benefits</span> From Our Online
+                            Learning</h1>
+                        <div class="flex">
+                            <img class="w-[80px]" src="./assets/imges/book-icon.png" alt="">
+                            <div>
+                                <h1 class="text-lg">Our Teaching Process</h1>
+                                <p class="text-gray-500">Our trainers are industry experts with years of </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img class="w-[80px]" src="./assets/imges/book-icon.png" alt="">
+                            <div>
+                                <h1 class="text-lg">Our Teaching Process</h1>
+                                <p class="text-gray-500">Our trainers are industry experts with years of </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img class="w-[80px]" src="./assets/imges/book-icon.png" alt="">
+                            <div>
+                                <h1 class="text-lg">Our Teaching Process</h1>
+                                <p class="text-gray-500">Our trainers are industry experts with years of </p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img class="w-[80px]" src="./assets/imges/book-icon.png" alt="">
+                            <div>
+                                <h1 class="text-lg">Our Teaching Process</h1>
+                                <p class="text-gray-500">Our trainers are industry experts with years of </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- trainers section -->
+    <section class="traniners-section bg-[#ea6aff] p-5">
+        <div class="container mx-auto">
+            <h1 class="text-center capitalize text-white text-xl">trainers name</h1>
+            <div class="flex flex-wrap justify-center gap-8 mt-5">
+                <div class="bg-[#ffd5f1] rounded-lg shadow-lg w-[300px] p-6">
+                    <div class="trainers-img w-[150px] h-[150px] rounded-full overflow-hidden bg-[#ff8c4b] mx-auto">
+                        <img src="./assets/imges/trainers1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center">
+                        <h1 class="mt-3 capitalize">abhijit roy</h1>
+                        <p>E-communicator & Spoken
+                            Eng Trainer, Business Instructor</p>
+                        <div class="social-icons flex items-center gap-2">
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-vimeo-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffd5f1] rounded-lg shadow-lg w-[300px] p-6">
+                    <div class="trainers-img w-[150px] h-[150px] rounded-full overflow-hidden bg-white mx-auto">
+                        <img src="./assets/imges/trainers1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center">
+                        <h1 class="mt-3 capitalize">abhijit roy</h1>
+                        <p>E-communicator & Spoken
+                            Eng Trainer, Business Instructor</p>
+                        <div class="social-icons flex items-center gap-2">
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-vimeo-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffd5f1] rounded-lg shadow-lg w-[300px] p-6">
+                    <div class="trainers-img w-[150px] h-[150px] rounded-full overflow-hidden bg-green-400 mx-auto">
+                        <img src="./assets/imges/trainers1.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-2 items-center">
+                        <h1 class="mt-3 capitalize">abhijit roy</h1>
+                        <p>E-communicator & Spoken
+                            Eng Trainer, Business Instructor</p>
+                        <div class="social-icons flex items-center gap-2">
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-facebook-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-twitter-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-instagram-fill"></i>
+                            </div>
+                            <div
+                                class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                                <i class="ri-vimeo-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- workes section -->
+    <section class="bg-[#f7f7f7] py-10">
+        <div class="container mx-auto p-4">
+            <h1 class="text-center text-2xl">HOW <span>NAME</span> WORKS</h1>
+            <div class="flex content-start mt-7 justify-between gap-3">
+                <div class="flex gap-5 flex-wrap">
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg max-w-sm  mx-auto p-5 shrink-0">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/geography.png" alt="">
+                            <h1 class="text-2xl">Explore</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">Different Bundles of Trending Skills</h2>
+
+                            <p>Explore the millions of possibilities to experiment and develop to get in touch with all
+                                the trending skills in the market.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg  max-w-sm mx-auto p-5 shrink-0">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/open-book.png" alt="">
+                            <h1 class="text-2xl">Learn</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">From the best of the best trainers</h2>
+
+                            <p>Learn from the trainers to become more skilled on your specific talent who has real-time
+                                expertise in their respective fields.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg  max-w-sm mx-auto p-5 shrink-0">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/increase.png" alt="">
+                            <h1 class="text-2xl">Grow & Inspire</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">The world around you</h2>
+                            <p>In addition to improve your specific skill to create a difference, inspire those people
+                                around you and help them to make a real difference in the society.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-[400px]" src="./assets/imges/work-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- student's feedback section -->
+    <section class="stu-feedback-section bg-[#ea6aff] p-5 capitalize">
+        <div class="container mx-auto">
+            <h1 class="text-center text-2xl text-white">student's feedback</h1>
+            <div class="flex items-center justify-between flex-wrap mt-7 gap-5 ">
+                <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="stu-img-box">
+                            <img src="./assets/imges/user.png" alt="">
+                        </div>
+                        <div class="stu-name-box">
+                            <h1>Rahul das</h1>
+                            <p>Student of Graphics Design Course</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                            really helpful for me to understand the entire web designing strategy. Now I have
+                            decided to buy the Web-Designing course from here...</p>
+                    </div>
+                </div>
+                <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="stu-img-box">
+                            <img src="./assets/imges/user.png" alt="">
+                        </div>
+                        <div class="stu-name-box">
+                            <h1>Rahul das</h1>
+                            <p>Student of Graphics Design Course</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                            really helpful for me to understand the entire web designing strategy. Now I have
+                            decided to buy the Web-Designing course from here...</p>
+                    </div>
+                </div>
+                <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                    <div class="flex items-center gap-3">
+                        <div class="stu-img-box">
+                            <img src="./assets/imges/user.png" alt="">
+                        </div>
+                        <div class="stu-name-box">
+                            <h1>Rahul das</h1>
+                            <p>Student of Graphics Design Course</p>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                            really helpful for me to understand the entire web designing strategy. Now I have
+                            decided to buy the Web-Designing course from here...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center bg-white mt-6 rounded-full shadow-lg max-w-md mx-auto overflow-hidden">
+                <input type="text" placeholder="Share your feedback about our courses"
+                    class="flex-grow p-2 text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none p-3" />
+                <button class="p-[18px] bg-red-300 text-white capitalize">send</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- support team section  -->
+    <section class="support-team-section p-5">
+        <div class="container mx-auto">
+            <h1 class="text-center text-2xl">Name Learner Support Team</h1>
+            <div class="flex items-start justify-around px-10 flex-wrap-reverse mt-7">
+                <div class="team-left-part">
+                    <img class="w-[300px]" src="./assets/imges/support-team.png" alt="">
+                </div>
+                <div class="team-right-part">
+                    <h1 class="text-2xl">Clarify your doubt & queries through <span class="text-blue-500"> G-mail / <br>
+                            WhatsApp / Calls or Texting into the
+                            given box</span>
+                    </h1>
+                    <div class="flex items-center gap-2 mt-5">
+                        <img src="./assets/imges/whatsapp.png" alt="">
+                        <p>0987654321</p>
+                    </div>
+                    <div class="flex items-center gap-2 mt-5">
+                        <img src="./assets/imges/gmail.png" alt="">
+                        <p>testexample.com</p>
+                    </div>
+                    <div class="relative">
+                        <div
+                            class="flex items-center bg-white mt-6 rounded-full shadow-lg max-w-md mx-auto overflow-hidden">
+                            <input type="text" placeholder="Type Your Question"
+                                class="flex-grow p-2 text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none p-3" />
+                        </div>
+                        <div class="mt-2 flex items-end justify-end flex-col">
+                            <button class="py-[10px] mt-3 px-[25px] rounded-2xl bg-orange-400 text-white">send</button>
+                            <button class="py-[10px] mt-3 px-[25px] rounded-2xl bg-orange-400 text-white"><i
+                                    class="ri-phone-fill"></i> Direct Call
+                                Us <i class="ri-arrow-right-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section -->
+    <footer class="bg-gray-800 text-gray-300 py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex  content-start flex-wrap    flex-col md:flex-row justify-between ">
+                <!-- Logo and Description -->
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-white text-2xl font-bold">LOGO</h2>
+                    <p class="mt-2 max-w-xs">
+                        Name is bringing the learner community of all the age groups under one roof to learn, implement.
+                        Click the button to reach us to assist you for creating your own professional website at cost
+                        effective rate.
+                    </p>
+                    <div class="social-icons flex items-center gap-2 mt-3">
+                        <div
+                            class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                            <i class="ri-facebook-fill"></i>
+                        </div>
+                        <div
+                            class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                            <i class="ri-twitter-fill"></i>
+                        </div>
+                        <div
+                            class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                            <i class="ri-instagram-fill"></i>
+                        </div>
+                        <div
+                            class="icon w-[30px] h-[30px] rounded-full overflow-hidden border-2  border-cyan-500  flex items-center justify-center cursor-pointer">
+                            <i class="ri-vimeo-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Popular Courses -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-white font-semibold">Popular Courses</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="hover:text-white">Digital Marketing</a></li>
+                        <li><a href="#" class="hover:text-white">Web Designing</a></li>
+                        <li><a href="#" class="hover:text-white">Html + CSS Basic</a></li>
+                        <li><a href="#" class="hover:text-white">Graphics Designing</a></li>
+                        <li><a href="#" class="hover:text-white">Spoken English (Live+Recorded)</a></li>
+                        <li><a href="#" class="hover:text-white">Communication Skill Development</a></li>
+                        <li><a href="#" class="hover:text-white">JAVA SCRIPT Basic</a></li>
+                    </ul>
+                </div>
+                <!-- Web Site Requirement -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-white font-semibold">Web Site Requirement</h3>
+                    <p class="mt-2 max-w-xs">Contact us by clicking the button below to create your own website. We will
+                        help you in every way.</p>
+                    <a href="#"
+                        class="inline-block mt-4 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Build
+                        Your Website</a>
+                </div>
+                <!-- Contact Us -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-white font-semibold">Contact Us</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +91 74353589xx</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> xyz@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-400">
+            <p>All Rights Reserved © 2024 | Name</p>
+            <p>THANK YOU FOR SUPPORT US...</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body> 
+
+</html>
