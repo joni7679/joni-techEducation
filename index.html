@@ -23,7 +23,8 @@
 <body>
     <!-- loader start here-->
     <div class="loader w-full h-[100vh] relative">
-        <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="./assets/imges/loader.gif" alt="">
+        <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            src="./assets/imges/loader.gif" alt="">
     </div>
     <!-- loader end here -->
     <main class="w-full overflow-hidden">
@@ -94,23 +95,27 @@
         </section>
 
         <div class="bg-blue-500 text-white py-10">
-            <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
-                <div>
-                    <h2 class="text-4xl font-bold">20+</h2>
-                    <p>Experienced Trainers</p>
+            <div class="container mx-auto">
+                <div id="counter-section"
+                    class="bg-blue-500 text-white py-12 flex justify-around items-center flex-wrap">
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold counter" data-count="20">0</h2>
+                        <p>Experienced Trainers</p>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold counter" data-count="20000">0</h2>
+                        <p>Students</p>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold counter" data-count="24">0</h2>
+                        <p>Helpline Available</p>
+                    </div>
+                    <div class="text-center">
+                        <h2 class="text-4xl font-bold counter" data-count="10">0</h2>
+                        <p>Valuable Trending Courses</p>
+                    </div>
                 </div>
-                <div>
-                    <h2 class="text-4xl font-bold">20K+</h2>
-                    <p>Students</p>
-                </div>
-                <div>
-                    <h2 class="text-4xl font-bold">24/7</h2>
-                    <p>Helpline Available</p>
-                </div>
-                <div>
-                    <h2 class="text-4xl font-bold">10+</h2>
-                    <p>Valuable Trending Courses</p>
-                </div>
+
             </div>
         </div>
         <!--=====our demand course =====-->
@@ -551,6 +556,14 @@
                         </div>
                     </div>
                 </div>
+                <div class="max-w-3xl mx-auto mt-10 p-4 bg-[#ffecec] border border-gray-300 rounded-lg shadow-md">
+                    <p class="font-semibold mb-1">Disclaimer :</p>
+                    <p class="text-sm text-gray-700 font-semibold">
+                        Name is not responsible for the payments of the courses, been made through any other affiliate
+                        links or third-party sources.
+                    </p>
+                </div>
+
             </div>
         </section>
         <!-- footer section -->
@@ -625,8 +638,9 @@
             </div>
         </footer>
     </main>
-    <!-- jquery cdn -->
+    <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
     <!-- stlick silder js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <!-- aos js cdn -->
