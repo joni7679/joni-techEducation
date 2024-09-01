@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+
 }
 
 html {
@@ -28,6 +28,9 @@ body {
     display: none;
 }
 
+main {
+    display: none;
+}
 
 /*  */
 @media(max-width:600px) {
