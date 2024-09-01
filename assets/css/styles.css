@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,355;1,355&family=Pontano+Sans:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
+
 
 .border-gradient {
     border: linear-gradient(to right, #8e2de2, #4a00e0) !important;
@@ -19,6 +26,14 @@ body {
 
 .toggle-icon {
     display: none;
+}
+
+
+/*  */
+@media(max-width:600px) {
+    .responsive-works-box {
+        width: 300px;
+    }
 }
 
 /* responsive navbar */
