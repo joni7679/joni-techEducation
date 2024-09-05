@@ -41,7 +41,7 @@ function responsiveNavBar() {
             val = 0
         }
     })
-    navOverly.addEventListener("click",()=>{
+    navOverly.addEventListener("click", () => {
         responsiveNavBar.classList.remove("active-nav");
         navOverly.style.display = "none"
         document.querySelector("body").style.overflow = "scroll"
@@ -49,72 +49,85 @@ function responsiveNavBar() {
 }
 responsiveNavBar()
 // couse list box 
-function courseDetailsAnimation(){
-let courseItems = document.querySelectorAll(".course-item");
-let courseDetails = document.querySelectorAll(".course-details");
+function courseDetailsAnimation() {
+    let courseItems = document.querySelectorAll(".course-item");
+    let courseDetails = document.querySelectorAll(".course-details");
 
-courseItems.forEach((item, index) => {
-    item.addEventListener("click", () => {
-        // Remove 'active' class from all course items
-        courseItems.forEach(tab => tab.classList.remove('active'));
-        // Add 'active' class to the clicked item
-        item.classList.add('active');
+    courseItems.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            // Remove 'active' class from all course items
+            courseItems.forEach(tab => tab.classList.remove('active'));
+            // Add 'active' class to the clicked item
+            item.classList.add('active');
 
-        // Remove 'active-course' class from all course details
-        courseDetails.forEach(course => course.classList.remove('active-course'));
-        // Add 'active-course' class to the corresponding course details
-        courseDetails[index].classList.add('active-course');
+            // Remove 'active-course' class from all course details
+            courseDetails.forEach(course => course.classList.remove('active-course'));
+            // Add 'active-course' class to the corresponding course details
+            courseDetails[index].classList.add('active-course');
+        });
     });
-});
 }
 courseDetailsAnimation()
 
 let viewAllBtn = document.querySelector(".view-btn");
 let otherCourseSection = document.querySelector(".other-couse-section");
-viewAllBtn.addEventListener("click",()=>{
-    otherCourseSection.classList.toggle("active-other-course")
+btn = 0
+viewAllBtn.addEventListener("click", () => {
+    if (btn === 0) {
+        otherCourseSection.classList.add("active-other-course")
+        viewAllBtn.innerHTML = "Hide"
+        btn = 1
+    }
+    else {
+        otherCourseSection.classList.remove("active-other-course")
+        viewAllBtn.innerHTML = "See More"
+        btn = 0
+
+    }
+
+
 })
 
 
 
 // stlick silder 
-function studentRevieSilder(){
-$('.student-review-silder').slick({
-    dots: false,
-    infinite: true,
-    arrows:false,
-    speed: 300,
-    slidesToShow: 3,
-    autoplay:true,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: false
+function studentRevieSilder() {
+    $('.student-review-silder').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: true,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        },
-        {
-            breakpoint: 700,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-    ]
-});
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
 }
 studentRevieSilder()
