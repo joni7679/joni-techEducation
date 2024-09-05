@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduction site</title>
+    <title>Education site</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- remix icons cdn -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
@@ -29,6 +29,7 @@
     <!-- loader end here -->
     <main class="w-full overflow-hidden">
         <!-- Navbar -->
+        <div class="nav-overly w-full h-screen"></div>
         <nav class="px-5 navBarGradient fixed top-0 w-full z-10">
             <div class="container mx-auto px-4 py-2 flex justify-between items-center">
                 <a href="#" class="text-white text-2xl font-bold">LOGO</a>
@@ -59,20 +60,21 @@
                 <a href="#" class="text-sm bg-purple-600 py-2 px-4 rounded-lg hover:bg-purple-800">Enroll now</a>
             </div>
         </nav>
-
-
-
         <!-- Banner Section -->
-        <section class="banner-section">
+        <section class="banner-section z-0 py-10">
             <div class="container mx-auto p-10 flex flex-col-reverse lg:flex-row items-center py-12 px-4 lg:px-0">
                 <div class="lg:w-1/2 w-full mt-6 lg:mt-0 p-10" data-aos="fade-right">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi veritatis, aliquam commodi
+
+                    <h1 class="text-3xl font-semibold">Unlocking the Next Level: Elevate Your Expertise with Top-Tier
+                        Tech</h1>
+                    <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi veritatis,
+                        aliquam commodi
                         quibusdam
                         dolorum illum, libero sequi fuga numquam accusamus vel, facere expedita itaque amet animi
                         sapiente
                         cum
                         ea repudiandae autem ipsa perferendis.</p>
-                    <a href="#" class="flex items-center text-orange-500 font-semibold text-xl">
+                    <a href="#" class="flex mt-5  items-center text-orange-500 font-semibold text-xl">
                         <div class="h-1 w-16 bg-orange-500 mr-2"></div>
                         <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
@@ -82,32 +84,26 @@
                         What is NAME?
                     </a>
                 </div>
-                <div class="lg:w-1/2 w-full flex flex-col items-center relative">
-                    <div class="banner-img" data-aos="fade-left">
+                <div class="lg:w-1/2 w-full flex flex-col items-center ">
+                    <div class="banner-img" data-aos="fade-left mt-5">
                         <div
-                            class="h-[350px] w-[350px] rounded-full border-4 border-[#ff783e] flex items-center justify-center">
+                            class="h-[300px] w-[300px] rounded-full border-4 border-[#ff783e] flex items-center justify-center">
                             <div
-                                class="h-80 w-80 rounded-full border-4 border-[#ff783e] flex items-center justify-center">
-                                <div class="bg-[#ff783e] h-72 w-72 rounded-full p-5 relative">
-                                    <img src="./assets/imges/banner-imge.png" alt="">
-                                    <div
-                                        class="bg-blue-200 text-pink-500 text-center  rounded-lg absolute left-[-190px] top-[-10px] py-[10px] px-[25px]">
-                                        <p class="font-semibold">10+<br>Online Courses</p>
-                                    </div>
-                                    <div
-                                        class="bg-[#f3a8ff] absolute bottom-[9px] left-[-90px] text-pink-500 text-center  rounded-lg py-[10px] px-[25px]">
-                                        <p class="font-semibold">20+<br>Expert Trainers</p>
-                                    </div>
-                                    <div
-                                        class="bg-[#beff8a] absolute  right-[-140px]  text-pink-500 text-center  rounded-lg py-[10px] px-[25px]">
-                                        <p class="font-semibold">20+<br>Online Studesnts</p>
-                                    </div>
-                                </div>
+                                class="bg-blue-200 text-pink-500 text-center  rounded-lg absolute left-[-190px] top-[-10px] py-[10px] px-[25px]">
+                                <p class="font-semibold">10+<br>Online Courses</p>
+                            </div>
+                            <div
+                                class="bg-[#f3a8ff] absolute bottom-[9px] left-[-90px] text-pink-500 text-center  rounded-lg py-[10px] px-[25px]">
+                                <p class="font-semibold">20+<br>Expert Trainers</p>
+                            </div>
+                            <div
+                                class="bg-[#beff8a] absolute  right-[-140px]  text-pink-500 text-center  rounded-lg py-[10px] px-[25px]">
+                                <p class="font-semibold">20+<br>Online Studesnts</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
+            </div>
         </section>
         <!-- counter section -->
         <section class="bg-blue-500 text-white py-10">
@@ -148,35 +144,39 @@
             </div>
         </section>
         <!--=====our demand course =====-->
-        <section class="our-demand-course-section ">
+        <section class="our-demand-course-section py-10">
             <div class="container mx-auto p-4">
                 <h2 class="text-center text-2xl font-bold mb-8">Our Demandable Courses</h2>
                 <div class="grid lg:grid-cols-3 gap-8">
 
                     <!-- Course List -->
-                    <div class="lg:col-span-1 flex flex-col gap-4">
-                        <div class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
+                    <div class="lg:col-span-1 flex flex-col gap-4 ">
+                        <div data-course="digital-marketing"
+                            class="course-item active p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
                             data-course="digital-marketing">
                             Digital Marketing
                         </div>
-                        <div class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
+                        <div data-course="graphic-design"
+                            class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
                             data-course="graphic-design">
                             Graphics Design
                         </div>
-                        <div class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
+                        <div data-course="web-designing"
+                            class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
                             data-course="web-designing">
                             Web-Designing
                         </div>
-                        <div class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
+                        <div data-course="html-css"
+                            class="course-item p-4 text-center border-2 border-orange-500 rounded-lg shadow-md hover:bg-orange-500 duration-100 hover:text-white  hover:border-white cursor-pointer"
                             data-course="html-css">
                             HTML+CSS Basic
                         </div>
                     </div>
 
                     <!-- Course Details -->
-                    <div class="lg:col-span-2">
+                    <div class="lg:col-span-2 relative h-full">
                         <div
-                            class=" bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500 digital-marketingcourse-details active">
+                            class="absolute active-course   top-0 bg-white hidden p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500 digital-marketing course-details">
                             <div>
                                 <h3 class="text-orange-500 text-xl font-semibold mb-4">Digital Marketing</h3>
                                 <p class="text-gray-600 mb-4">
@@ -220,7 +220,7 @@
                         </div>
                         <!-- graphic design -->
                         <div
-                            class=" bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
+                            class="absolute  top-0 hidden  bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
                             <div>
                                 <h3 class="text-orange-500 text-xl font-semibold mb-4">Graphics Design</h3>
                                 <p class="text-gray-600 mb-4">
@@ -263,7 +263,7 @@
                         </div>
                         <!-- web design -->
                         <div
-                            class=" bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
+                            class="absolute  top-0 hidden bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
                             <div>
                                 <h3 class="text-orange-500 text-xl font-semibold mb-4">Web Design</h3>
                                 <p class="text-gray-600 mb-4">
@@ -309,7 +309,7 @@
                         </div>
                         <!-- html & css basic -->
                         <div
-                            class=" bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
+                            class="absolute  top-0 hidden bg-white p-6 rounded-lg shadow-lg  flex items-center border-2 border-orange-500  graphic-design course-details">
                             <div>
                                 <h3 class="text-orange-500 text-xl font-semibold mb-4">Html & Css Basic</h3>
                                 <p class="text-gray-600 mb-4">
@@ -363,7 +363,7 @@
                     <div class="flex flex-wrap justify-center gap-8">
                         <!-- Course Card 1 -->
                         <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-up-right">
-                            <img src="./assets/imges/course1.png" alt="Digital Marketing"
+                            <img src="./assets/imges/seo.png" alt="Digital Marketing"
                                 class="w-full h-48 rounded-lg mb-4">
                             <div class="flex items-center justify-between">
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">digital
@@ -386,10 +386,9 @@
                                 <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
                             </div>
                         </div>
-
                         <!-- Course Card 2 -->
                         <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-up-left">
-                            <img src="./assets/imges/course2.png" alt="Web Design" class="w-full h-48 rounded-lg mb-4">
+                            <img src="./assets/imges/web-design.jpg" alt="Web Design" class="w-full h-48 rounded-lg mb-4">
                             <div class="flex items-center justify-between ">
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">web Design
                                 </h1>
@@ -407,10 +406,9 @@
                                 <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
                             </div>
                         </div>
-
                         <!-- Course Card 3 -->
                         <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-left">
-                            <img src="./assets/imges/course3.png" alt="HTML CSS" class="w-full h-48 rounded-lg mb-4">
+                            <img src="./assets/imges/web-devloment.jpg" alt="HTML CSS" class="w-full h-48 rounded-lg mb-4">
                             <div class="flex items-center justify-between">
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">html & css
                                     basic
@@ -430,6 +428,88 @@
                                 <p class="text-2xl font-bold text-purple-600">₹3499</p>
                                 <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
                             </div>
+                        </div>
+
+
+                    </div>
+                    <div class="flex items-center justify-center mt-5">
+                        <button class="py-[10px] px-[25px] rounded bg-white capitalize view-btn">view all</button>
+                    </div>
+                    <div class="other-couse-section mt-5">
+                        <div class="flex flex-wrap justify-center gap-8">
+                            <!-- Course Card 1 -->
+                            <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" >
+                                <img src="./assets/imges/video-edting.jpg" alt="video edting"
+                                    class="w-full h-48 rounded-lg mb-4">
+                                <div class="flex items-center justify-between">
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">video
+                                        edting
+                                    </h1>
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                            class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">video edting
+                                </h3>
+                                <div class="flex gap-5">
+                                    <p class="text-gray-500 mb-2">15 Courses</p>
+                                    <p class="text-gray-500 mb-4">234+ Students</p>
+                                </div>
+                                <div class="border-b-2 border-black mt-5"></div>
+
+                                <div class="flex justify-between items-center mt-5">
+                                    <p class="text-2xl font-bold text-purple-600">₹1499</p>
+                                    <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                                </div>
+                            </div>
+                            <!-- Course Card 2 -->
+                            <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" >
+                                <img src="./assets/imges/ai.jpg" alt="Web Design" class="w-full h-48 rounded-lg mb-4">
+                                <div class="flex items-center justify-between ">
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">Artificial
+                                        intelligence
+                                    </h1>
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                            class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">Artificial intelligence(Ai)
+                                </h3>
+                                <div class="flex gap-5">
+                                    <p class="text-gray-500 mb-2">15 Courses</p>
+                                    <p class="text-gray-500 mb-4">234+ Students</p>
+                                </div>
+                                <div class="border-b-2 border-black mt-5"></div>
+                                <div class="flex justify-between items-center mt-5">
+                                    <p class="text-2xl font-bold text-purple-600">₹2999</p>
+                                    <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                                </div>
+                            </div>
+                            <!-- Course Card 3 -->
+                            <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" >
+                                <img src="./assets/imges/web-devloment.jpg" alt="HTML CSS"
+                                    class="w-full h-48 rounded-lg mb-4">
+                                <div class="flex items-center justify-between">
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">html & css
+                                        basic
+                                    </h1>
+                                    <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
+                                            class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">HTML + CSS Learning &
+                                    Practical
+                                </h3>
+                                <div class="flex gap-5">
+                                    <p class="text-gray-500 mb-2">15 Courses</p>
+                                    <p class="text-gray-500 mb-4">234+ Students</p>
+                                </div>
+                                <div class="border-b-2 border-black mt-5"></div>
+
+                                <div class="flex justify-between items-center mt-5">
+                                    <p class="text-2xl font-bold text-purple-600">₹3499</p>
+                                    <button class="bg-purple-500 text-white px-4 py-2 rounded-md">Buy now</button>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -580,7 +660,7 @@
         <section id="works" class="bg-[#f7f7f7] py-10">
             <div class="container mx-auto p-4">
                 <h1 class="text-center text-2xl">HOW <span>NAME</span> WORKS</h1>
-                <div class="flex">
+                <div class="flex items-center work-section">
                     <div class="flex gap-5 flex-wrap">
                         <div
                             class="bg-[#f3ddfd] rounded-lg shadow-lg max-w-sm  mx-auto p-5 shrink-0 responsive-works-box">
@@ -628,57 +708,119 @@
         <section class="stu-feedback-section bg-gradient p-5 capitalize">
             <div class="container mx-auto">
                 <h1 class="text-center text-2xl text-white">student's feedback</h1>
-                <div class="flex items-center justify-between flex-wrap mt-7 gap-5 ">
-                    <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
-                        <div class="flex items-center gap-3">
-                            <div class="stu-img-box">
-                                <img src="./assets/imges/user.png" alt="">
+                <div class="student-review-silder mt-7 gap-5 ">
+
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
                             </div>
-                            <div class="stu-name-box">
-                                <h1>Rahul das</h1>
-                                <p>Student of Graphics Design Course</p>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
                             </div>
-                        </div>
-                        <div class="mt-5">
-                            <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
-                                really helpful for me to understand the entire web designing strategy. Now I have
-                                decided to buy the Web-Designing course from here...</p>
                         </div>
                     </div>
-                    <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
-                        <div class="flex items-center gap-3">
-                            <div class="stu-img-box">
-                                <img src="./assets/imges/user.png" alt="">
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
                             </div>
-                            <div class="stu-name-box">
-                                <h1>Rahul das</h1>
-                                <p>Student of Graphics Design Course</p>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
                             </div>
-                        </div>
-                        <div class="mt-5">
-                            <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
-                                really helpful for me to understand the entire web designing strategy. Now I have
-                                decided to buy the Web-Designing course from here...</p>
                         </div>
                     </div>
-                    <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
-                        <div class="flex items-center gap-3">
-                            <div class="stu-img-box">
-                                <img src="./assets/imges/user.png" alt="">
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
                             </div>
-                            <div class="stu-name-box">
-                                <h1>Rahul das</h1>
-                                <p>Student of Graphics Design Course</p>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
                             </div>
                         </div>
-                        <div class="mt-5">
-                            <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
-                                really helpful for me to understand the entire web designing strategy. Now I have
-                                decided to buy the Web-Designing course from here...</p>
+                    </div>
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
+                            <div class="flex items-center gap-3">
+                                <div class="stu-img-box">
+                                    <img src="./assets/imges/user.png" alt="">
+                                </div>
+                                <div class="stu-name-box">
+                                    <h1>Rahul das</h1>
+                                    <p>Student of Graphics Design Course</p>
+                                </div>
+                            </div>
+                            <div class="mt-5">
+                                <p>Thank you Name for giving me this opportunity.Honestly, this specific course became
+                                    really helpful for me to understand the entire web designing strategy. Now I have
+                                    decided to buy the Web-Designing course from here...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex items-center bg-white mt-6 rounded-full shadow-lg max-w-md mx-auto overflow-hidden">
+
+                <div class="flex items-center bg-white mt-6 rounded-full shadow-lg max-w-2xl  mx-auto overflow-hidden">
                     <input type="text" placeholder="Share your feedback about our courses"
                         class="flex-grow p-2 text-gray-600 placeholder-gray-400 bg-transparent focus:outline-none p-3" />
                     <button class="p-[18px] btn-gradient text-white capitalize">send</button>

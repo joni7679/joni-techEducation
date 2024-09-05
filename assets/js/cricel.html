@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.main-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orbit {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: rotate 5s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+
+.small-circle.one {
+  top: 0;
+}
+
+.small-circle.two {
+  left: 0;
+}
+
+.small-circle.three {
+  right: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="main-circle">
+        <div class="small-circle one"></div>
+        <div class="small-circle two"></div>
+        <div class="small-circle three"></div>
+    </div>
+
+</body>
+
+</html>
