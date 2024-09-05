@@ -160,7 +160,7 @@ main {
     overflow: hidden;
     background: var(--bg-grident-color);
     left: -100%;
-    top: 35px;
+    top: 70px;
     z-index: 9;
     transition: all 0.5s;
 }
