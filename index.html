@@ -17,14 +17,13 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- custom css file -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-
 </head>
 
 <body>
     <!-- loader start here-->
     <div class="loader w-full h-[100vh] relative">
         <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-            src="./assets/imges/loader.gif" alt="">
+            src="./assets/imges/loader.gif" alt="" loading="lazy">
     </div>
     <!-- loader end here -->
     <main class="w-full overflow-hidden">
@@ -35,7 +34,7 @@
                 <a href="#" class="text-white text-2xl font-bold">
                     <img class="w-[150px]" src="./assets/imges/Logo.png" alt="">
                 </a>
-                <div class="space-x-4 text-white responsive-navbar hidden lg:flex">
+                <div class="space-x-4 text-white responsive-navbar hidden lg:flex items-center">
                     <a href="#" class="nav-link hover:text-gray-200">Home</a>
                     <a href="#" class="nav-link hover:text-gray-200">About</a>
                     <a href="#workes" class="nav-link hover:text-gray-200">Services</a>
@@ -63,36 +62,49 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="banner-section z-0 py-10">
-            <div class="container mx-auto p-10 flex flex-col-reverse lg:flex-row items-center py-12 px-4 lg:px-0">
-                <div class="lg:w-1/2 w-full mt-6 lg:mt-0 p-10" data-aos="fade-right">
-
-                    <h1 class="text-3xl font-semibold">Unlocking the Next Level: Elevate Your Expertise with Top-Tier
-                        Tech</h1>
-                    <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi veritatis,
-                        aliquam commodi
-                        quibusdam
-                        dolorum illum, libero sequi fuga numquam accusamus vel, facere expedita itaque amet animi
-                        sapiente
-                        cum
-                        ea repudiandae autem ipsa perferendis.</p>
-                    <a href="#" class="flex mt-5  items-center text-orange-500 font-semibold text-xl">
-                        <div class="h-1 w-16 bg-orange-500 mr-2"></div>
-                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10 2a8 8 0 100 16 8 8 0 000-16zm3.33 8.8l-5 3A.75.75 0 017 13.25v-6.5a.75.75 0 011.13-.65l5 3a.75.75 0 010 1.3z" />
-                        </svg>
-                        What is NAME?
-                    </a>
-                </div>
-                <div class="lg:w-1/2 w-full flex flex-col items-center ">
-                    <div class="banner-img" data-aos="fade-left mt-5">
-                      <img class="w-[500px]" src="./assets/imges/banner-img.jpeg" alt="">
-                    </div>
+        <section class="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
+            <div class="absolute inset-0">
+                <img class="object-cover w-full h-full md:object-left md:scale-150 md:origin-top-left" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/5/girl-working-on-laptop.jpg" alt="" />
+            </div>
+        
+            <div class="absolute inset-0 hidden bg-gradient-to-r md:block from-black to-transparent"></div>
+        
+            <div class="absolute inset-0 block bg-black/60 md:hidden"></div>
+        
+            <div class="relative px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+                <div class="text-center md:w-2/3 lg:w-1/2 xl:w-1/3 md:text-left">
+                    <h2 class="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">Get full access to Celebration</h2>
+                    <p class="mt-4 text-base text-gray-200">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam.</p>
+                    <form action="#" method="POST" class="mt-8 lg:mt-12">
+                        <div class="flex flex-col items-center sm:flex-row sm:justify-center">
+                            <div class="flex-1 w-full min-w-0 px-4 sm:px-0">
+                                <div class="relative text-gray-400 focus-within:text-gray-600">
+                                    <label for="email" class="sr-only"></label>
+                                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                                        </svg>
+                                    </div>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter email address"
+                                        class="block w-full py-4 pl-10 pr-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-blue-600 focus:border-blue-600 focus:ring-1 focus:ring-blue-600"
+                                        required
+                                    />
+                                </div>
+                            </div>
+        
+                            <button type="submit" class="inline-flex items-center justify-center flex-shrink-0 w-auto px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-orange-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-orange-700 focus:bg-orange-700">
+                                Get instant access
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
+        
         <!-- counter section -->
         <section class="bg-blue-500 text-white py-10">
             <div class="container mx-auto">
@@ -132,11 +144,10 @@
             </div>
         </section>
         <!--=====our demand course =====-->
-        <section class="our-demand-course-section py-10">
+        <section class="our-demand-course-section py-10 px-5">
             <div class="container mx-auto p-4">
                 <h2 class="text-center text-2xl font-bold mb-8">Our Demandable Courses</h2>
                 <div class="grid lg:grid-cols-3 gap-8">
-
                     <!-- Course List -->
                     <div class="lg:col-span-1 flex flex-col gap-4 ">
                         <div data-course="digital-marketing"
@@ -160,7 +171,6 @@
                             HTML+CSS Basic
                         </div>
                     </div>
-
                     <!-- Course Details -->
                     <div class="lg:col-span-2 relative h-full">
                         <div
@@ -345,39 +355,38 @@
         </section>
         <!-- our course section -->
         <section class="our-course-section bg-gradient  w-full  mt-10 capitalize mt-[200px]">
-            <div class="container mx-auto p-4">
+            <div class="container mx-auto p-5">
                 <div class=" py-5">
                     <h2 class="text-white text-2xl font-bold text-center mb-10">OUR ALL COURSES</h2>
-                    <div class="flex flex-wrap justify-center gap-8">
+                    <div class="flex flex-wrap justify-center items-center gap-3">
                         <!-- Course Card 1 -->
-                        <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-up-right">
-                            <img src="./assets/imges/seo.png" alt="Digital Marketing"
-                                class="w-full h-48 rounded-lg mb-4">
-                            <div class="flex items-center justify-between">
-                                <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">digital
-                                    Marketing
+                        <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-up-left">
+                            <div>
+                                <img src="./assets/imges/digital-marketing.jpg" alt="digital-marketing"
+                                    class="w-full object-cover h-48 rounded-lg mb-4">
+                            </div>
+
+                            <div class="flex items-center justify-between ">
+                                <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">web Design
                                 </h1>
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]"><i
                                         class="ri-star-fill text-[#ffc107]"></i> 3.9</h1>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">Digital Marketing & Affiliate
-                                Marketing
-                            </h3>
+                            <h3 class="text-xl font-semibold text-gray-800 mt-5 mb-2">Web Designing & Prototyping</h3>
                             <div class="flex gap-5">
                                 <p class="text-gray-500 mb-2">15 Courses</p>
                                 <p class="text-gray-500 mb-4">234+ Students</p>
                             </div>
                             <div class="border-b-2 border-black mt-5"></div>
-
                             <div class="flex justify-between items-center mt-5">
-                                <p class="text-2xl font-bold text-purple-600">₹1499</p>
+                                <p class="text-2xl font-bold text-purple-600">₹2999</p>
                                 <button class="btn">Buy now</button>
                             </div>
                         </div>
                         <!-- Course Card 2 -->
                         <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-up-left">
                             <img src="./assets/imges/web-design.jpg" alt="Web Design"
-                                class="w-full h-48 rounded-lg mb-4">
+                                class="w-full object-cover h-48 rounded-lg mb-4">
                             <div class="flex items-center justify-between ">
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">web Design
                                 </h1>
@@ -398,7 +407,7 @@
                         <!-- Course Card 3 -->
                         <div class="bg-white rounded-lg shadow-lg max-w-sm p-6" data-aos="fade-left">
                             <img src="./assets/imges/web-devloment.jpg" alt="HTML CSS"
-                                class="w-full h-48 rounded-lg mb-4">
+                                class="w-full object-cover h-48 rounded-lg mb-4">
                             <div class="flex items-center justify-between">
                                 <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">html & css
                                     basic
@@ -419,16 +428,13 @@
                                 <button class="btn">Buy now</button>
                             </div>
                         </div>
-
-
                     </div>
-
                     <div class="other-couse-section mt-5">
-                        <div class="flex flex-wrap justify-center gap-8">
+                        <div class="flex flex-wrap justify-center gap-3">
                             <!-- Course Card 1 -->
                             <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
                                 <img src="./assets/imges/video-edting.jpg" alt="video edting"
-                                    class="w-full h-48 rounded-lg mb-4">
+                                    class="w-full object-cover h-48 rounded-lg mb-4">
                                 <div class="flex items-center justify-between">
                                     <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">video
                                         edting
@@ -452,7 +458,8 @@
                             </div>
                             <!-- Course Card 2 -->
                             <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
-                                <img src="./assets/imges/ai.jpg" alt="Web Design" class="w-full h-48 rounded-lg mb-4">
+                                <img src="./assets/imges/ai.jpg" alt="Web Design"
+                                    class="w-full  object-cover h-48 rounded-lg mb-4">
                                 <div class="flex items-center justify-between ">
                                     <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">Artificial
                                         intelligence
@@ -476,7 +483,7 @@
                             <!-- Course Card 3 -->
                             <div class="bg-white rounded-lg shadow-lg max-w-sm p-6">
                                 <img src="./assets/imges/web-devloment.jpg" alt="HTML CSS"
-                                    class="w-full h-48 rounded-lg mb-4">
+                                    class="w-full object-cover h-48 rounded-lg mb-4">
                                 <div class="flex items-center justify-between">
                                     <h1 class="py-[10px] px-[25px] rounded bg-[#ebd1fd] text-pink-[#9d0eff]">html & css
                                         basic
@@ -499,29 +506,23 @@
 
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <div class="flex items-center justify-center mt-5">
                         <button class="capitalize view-btn btn">See More</button>
                     </div>
                 </div>
-
             </div>
-
         </section>
         <!-- why us section -->
-        <section class="why-us-scetion">
-            <div class="container mx-auto p-4">
+        <section class="why-us-scetion p-5">
+            <div class="container mx-auto ">
                 <h1 class="text-center  text-xl uppercase border-b-2 border-orange-500 w-fit mx-auto ">why us</h1>
-                <div class="grid md:grid-cols-2 sm:grid-cols-1 mt-5">
+                <div class="flex items-center justify-around flex-wrap mt-5">
                     <div class="left-part px-10" data-aos="zoom-in">
                         <img class="w-[400px]" src="./assets/imges/WHY IMG.png" alt="">
                     </div>
-
                     <div class="right-part">
-
                         <div class="flex mt-5 items-start  gap-5 px-10 flex-col" data-aos="zoom-in-up">
                             <h1 class="text-xl"><span class="text-[#ff783e]">Benefits</span> From Our Online
                                 Learning</h1>
@@ -651,51 +652,45 @@
             </div>
         </section>
         <!-- workes section -->
-        <section id="works" class="bg-[#f7f7f7] py-10">
-            <div class="container mx-auto p-4">
+        <section id="works" class="py-10  px-5">
+            <div class="container mx-auto">
                 <h1 class="text-center text-2xl">HOW <span>NAME</span> WORKS</h1>
-                <div class="flex items-center work-section">
-                    <div class="flex gap-5 flex-wrap">
-                        <div
-                            class="bg-[#f3ddfd] rounded-lg shadow-lg max-w-sm  mx-auto p-5 shrink-0 responsive-works-box">
-                            <div class="flex items-center gap-3 flex-col">
-                                <img class="" src="./assets/imges/geography.png" alt="">
-                                <h1 class="text-2xl">Explore</h1>
-                                <h2 class="text-xl text-[#0c8ce9]">Different Bundles of Trending Skills</h2>
+                <div class="flex items-start justify-between  work-section mt-5">
 
-                                <p>Explore the millions of possibilities to experiment and develop to get in touch with
-                                    all
-                                    the trending skills in the market.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-[#f3ddfd] rounded-lg shadow-lg  max-w-sm mx-auto p-5 shrink-0 responsive-works-box">
-                            <div class="flex items-center gap-3 flex-col">
-                                <img class="" src="./assets/imges/open-book.png" alt="">
-                                <h1 class="text-2xl">Learn</h1>
-                                <h2 class="text-xl text-[#0c8ce9]">From the best of the best trainers</h2>
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg w-80 mx-auto p-5 shrink-0 responsive-works-box">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/geography.png" alt="">
+                            <h1 class="text-2xl">Explore</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">Different Bundles of Trending Skills</h2>
 
-                                <p>Learn from the trainers to become more skilled on your specific talent who has
-                                    real-time
-                                    expertise in their respective fields.</p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-[#f3ddfd] rounded-lg shadow-lg  max-w-sm mx-auto p-5 shrink-0 responsive-works-box">
-                            <div class="flex items-center gap-3 flex-col">
-                                <img class="" src="./assets/imges/increase.png" alt="">
-                                <h1 class="text-2xl">Grow & Inspire</h1>
-                                <h2 class="text-xl text-[#0c8ce9]">The world around you</h2>
-                                <p>In addition to improve your specific skill to create a difference, inspire those
-                                    people
-                                    around you and help them to make a real difference in the society.</p>
-                            </div>
+                            <p>Explore the millions of possibilities to experiment and develop to get in touch with
+                                all
+                                the trending skills in the market.</p>
                         </div>
                     </div>
-                    <div>
-                        <img class="w-[400px]" src="./assets/imges/work-img.png" alt="">
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg w-80 mx-auto p-5 shrink-0 responsive-works-box">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/open-book.png" alt="">
+                            <h1 class="text-2xl">Learn</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">From the best of the best trainers</h2>
+
+                            <p>Learn from the trainers to become more skilled on your specific talent who has
+                                real-time
+                                expertise in their respective fields.</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#f3ddfd] rounded-lg shadow-lg w-80	 mx-auto p-5 shrink-0 responsive-works-box">
+                        <div class="flex items-center gap-3 flex-col">
+                            <img class="" src="./assets/imges/increase.png" alt="">
+                            <h1 class="text-2xl">Grow & Inspire</h1>
+                            <h2 class="text-xl text-[#0c8ce9]">The world around you</h2>
+                            <p>In addition to improve your specific skill to create a difference, inspire those
+                                people
+                                around you and help them to make a real difference in the society.</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- student's feedback section -->
@@ -703,8 +698,7 @@
             <div class="container mx-auto">
                 <h1 class="text-center text-2xl text-white">student's feedback</h1>
                 <div class="student-review-silder mt-7 gap-5 ">
-
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -722,7 +716,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -740,7 +734,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -758,7 +752,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -776,7 +770,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -794,7 +788,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-3">
+                    <div class="p-[10px]">
                         <div class="bg-[#e8e8e8] rounded-3xl shadow-lg max-w-sm p-5">
                             <div class="flex items-center gap-3">
                                 <div class="stu-img-box">
@@ -826,7 +820,7 @@
         <section class="support-team-section p-5">
             <div class="container mx-auto">
                 <h1 class="text-center text-2xl">Name Learner Support Team</h1>
-                <div class="flex items-start justify-around px-10 flex-wrap-reverse mt-7">
+                <div class="flex items-start justify-around  flex-wrap-reverse mt-7">
                     <div class="team-left-part" data-aos="zoom-in-up">
                         <img class="w-[300px]" src="./assets/imges/support-team.png" alt="">
                     </div>
@@ -871,7 +865,7 @@
             </div>
         </section>
         <!-- footer section -->
-        <footer class="bg-gray-800 text-gray-300 py-8" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <footer class="bg-gray-800 text-gray-300 py-8 px-5" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             <div class="container mx-auto px-4">
                 <div class="flex  content-start flex-wrap    flex-col md:flex-row justify-between ">
                     <!-- Logo and Description -->
@@ -880,7 +874,9 @@
                             <img class="w-[100px]" src="./assets/imges/sec-logo.png" alt="">
                         </h2>
                         <p class="mt-2 max-w-xs">
-                            GyanMool is bringing the learner community of all the age groups under one roof to learn, implement, Click the button to reach us to assist you for creating your own professional website at cost effective rate.
+                            GyanMool is bringing the learner community of all the age groups under one roof to learn,
+                            implement, Click the button to reach us to assist you for creating your own professional
+                            website at cost effective rate.
                         </p>
                         <div class="social-icons flex items-center gap-2 mt-3">
                             <div
@@ -939,23 +935,21 @@
                 <p>THANK YOU FOR SUPPORT US...</p>
             </div>
         </footer>
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <!-- jQuery Waypoints CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <!-- Counter-Up Plugin CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+        <!-- Slick Slider CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <!-- AOS CDN -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="./assets/js/script.js"></script>
     </main>
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- jQuery Waypoints CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <!-- Counter-Up Plugin CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Slick Slider CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <!-- AOS CDN -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

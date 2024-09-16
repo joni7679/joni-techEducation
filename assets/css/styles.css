@@ -9,8 +9,9 @@
 
 :root {
     --primary-color: #3498db;
+    --primary-bg-color: #F9F4FB;
     --secondary-color: #2ecc71;
-    --bg-grident-color: linear-gradient(to top, #8606ff, #c82cfe);
+    --bg-grident-color: #DF85FF;
     --sec-grident-color: linear-gradient(to bottom, #e367ff, #af71fd);
 }
 
@@ -66,57 +67,64 @@ main {
 
 /* animation cricle banner */
 
-/* Parent container with 400px size */
-.parent {
+.banner-section{
+    background-color: var(--primary-bg-color);
+}
+.banner-img {
     position: relative;
-    width: 400px;
-    height: 400px;
-    background: #1C7C54;
-    border-radius: 50%;
-    animation: rotateParent 10s linear infinite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Children divs with 200px size */
-  .child {
-    --distance: 200px;  /* Distance from the parent center */
+}
+
+.grphics {
+    width: 300px;
+    height: 300px;
     position: absolute;
-    width: 200px;
-    height: 200px;
-    background: #1B512D;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 50%;
-    transform-origin: center;
-    transition: transform 0.5s;
-  }
-  
-  /* Each child placed at different angles */
-  .child:nth-of-type(1) {
-    transform: translate(calc(var(--distance) * cos(0deg)), calc(var(--distance) * sin(0deg)));
-  }
-  
-  .child:nth-of-type(2) {
-    transform: translate(calc(var(--distance) * cos(120deg)), calc(var(--distance) * sin(120deg)));
-  }
-  
-  .child:nth-of-type(3) {
-    transform: translate(calc(var(--distance) * cos(240deg)), calc(var(--distance) * sin(240deg)));
-  }
-  
-  /* Rotating the parent div */
-  @keyframes rotateParent {
-    from {
-      transform: rotate(0deg);
+    top: 1px;
+    left: 1px;
+    animation: circle 8s infinite linear;
+}
+
+#graphic-one {
+    position: absolute;
+    top: 6%;
+    left: -17%;
+    animation: circle 15s infinite linear;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+#graphic-two {
+    position: absolute;
+    right: -30%;
+    top: 11%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: circle 15s infinite linear;
+
+}
+
+
+#graphic-three {
+    position: absolute;
+    top: 78%;
+    left: 20%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    animation: circle 15s infinite linear;
+
+
+}
+
+@keyframes circle {
+    0% {
+        rotate: 0deg;
+
     }
-    to {
-      transform: rotate(360deg);
+
+    100% {
+        rotate: 360deg;
     }
-  }
+}
+
+
 
 .other-couse-section {
     height: 0;
@@ -159,14 +167,14 @@ main {
     position: fixed;
     overflow: hidden;
     background: var(--bg-grident-color);
-    left: -100%;
+    right: -100%;
     top: 70px;
     z-index: 9;
     transition: all 0.5s;
 }
 
 /* animativ btn */
-/* From Uiverse.io by alexroumi */ 
+/* From Uiverse.io by alexroumi */
 .btn {
     padding: 15px 25px;
     border: unset;
@@ -177,13 +185,13 @@ main {
     position: relative;
     font-weight: 1000;
     font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
     overflow: hidden;
-   }
-   
-   .btn::before {
+}
+
+.btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -193,20 +201,63 @@ main {
     border-radius: 15px;
     background-color: #d46bff;
     z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms
-   }
-   
-   .btn:hover {
+}
+
+.btn:hover {
     color: #e8e8e8;
-   }
-   
-   .btn:hover::before {
+}
+
+.btn:hover::before {
     width: 100%;
-   }
+}
+/* btn2 animation */
+.btn2 {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
 
+.btn2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #F97316;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
 
+.btn2:hover {
+    color: #e8e8e8;
+}
+
+.btn2:hover::before {
+    width: 100%;
+}
+
+.support-team-section{
+    background-color: var(--primary-bg-color);
+}
+
+/* stlick silder */
 
 /* responsive navbar */
 @media (max-width:1023px) {
@@ -216,11 +267,17 @@ main {
 
     .active-nav {
         transition: all 0.6s;
-        left: 0;
+        right: 0;
     }
 
     .our-demand-course-section {
         padding-bottom: 400px !important;
+    }
+}
+
+@media (max-width:994px) {
+    .banner-img {
+        margin-top: 50px;
     }
 }
 
@@ -245,5 +302,12 @@ main {
         width: 300px;
     }
 
+
+}
+
+@media (max-width:400px) {
+    .our-course-section {
+        margin-top: 200px;
+    }
 
 }

@@ -68,7 +68,7 @@ function courseDetailsAnimation() {
     });
 }
 courseDetailsAnimation()
-
+function Seemore(){
 let viewAllBtn = document.querySelector(".view-btn");
 let otherCourseSection = document.querySelector(".other-couse-section");
 btn = 0
@@ -87,8 +87,8 @@ viewAllBtn.addEventListener("click", () => {
 
 
 })
-
-
+}
+Seemore()
 
 // stlick silder 
 function studentRevieSilder() {
